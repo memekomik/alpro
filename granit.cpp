@@ -5,11 +5,11 @@ using namespace std;
 int main() {
        const float Lgranit = 0.6 * 0.6;
        const int gaji = 27500;
-       int pRT,lRT,LuasRT,pRK,lRK,LuasRK,tGranit;
+       int pRT,lRT,LuasRT,pRK,lRK,LuasRK,LuasTotal,tGranit;
        const int kGranit = 3;
-       int tgaji;
+       float tgaji;
        const int hkGranit = 185000;
-       float tkGranit,thkGranit;
+       float tkGranit,thkGranit,tbiaya;
        
        //Input nilai-nilai dalam kasus
        cout<<"Tugas Alpro Granit";
@@ -29,18 +29,16 @@ int main() {
        tkGranit=tGranit/kGranit;
        tgaji=(LuasRT+LuasRK)*gaji;
        thkGranit=tkGranit*hkGranit;
+       tbiaya=tgaji+thkGranit;
        
        //Menampilkan output
-       cout<<"Luas ruang tamu:";
-       cout<<LuasRT<< endl;
-       cout<<"Luas ruang keluarga:";
-       cout<<LuasRK<< endl;
-       cout<<"Total kotak granit yang dibutuhkan:";
-       cout<<tkGranit<< endl;
-       cout<<"Gaji yang diperoleh Pak Nitgra:";
-       cout<<tgaji<< endl;
-       cout<<"Biaya total granit yang diperlukan:";
-       cout<<thkGranit<< endl;
+       cout<<"Luas ruang tamu:"<<LuasRT<< endl;
+       cout<<"Luas ruang keluarga:"<<LuasRK<< endl;
+       cout<<"Luas yang perlu dipasang granit:"<<LuasTotal<<endl;
+       cout<<"Total kotak granit yang dibutuhkan:"<<tkGranit<< endl;
+       cout<<"Gaji yang diperoleh Pak Nitgra:"<<tgaji<< endl;
+       cout<<"Biaya granit yang diperlukan:"<<thkGranit<< endl;
+       cout<<"Biaya total yang harus dikeluarkan oleh Pak Ali:"<<tbiaya<< endl;
        
        return 0;
        
