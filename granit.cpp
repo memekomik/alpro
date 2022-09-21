@@ -5,11 +5,10 @@ using namespace std;
 int main() {
        const float Lgranit = 0.6 * 0.6;
        const int gaji = 27500;
-       int pRT,lRT,LuasRT,pRK,lRK,LuasRK,LuasTotal,tGranit;
+       int pRT,lRT,LuasRT,pRK,lRK,LuasRK,LuasTotal,tgaji;
        const int kGranit = 3;
-       float tgaji;
        const int hkGranit = 185000;
-       float tkGranit,thkGranit,tbiaya;
+       float tGranit,tkGranit,thkGranit,tbiaya;
        
        //Input nilai-nilai dalam kasus
        cout<<"Tugas Alpro Granit";
@@ -25,9 +24,10 @@ int main() {
        //Proses
        LuasRT=pRT*lRT;
        LuasRK=pRK*lRK;
-       tGranit=(LuasRT+LuasRK)/Lgranit;
+       LuasTotal=LuasRT+LuasRK;
+       tGranit=LuasTotal/Lgranit;
        tkGranit=tGranit/kGranit;
-       tgaji=(LuasRT+LuasRK)*gaji;
+       tgaji=LuasTotal*gaji;
        thkGranit=tkGranit*hkGranit;
        tbiaya=tgaji+thkGranit;
        
