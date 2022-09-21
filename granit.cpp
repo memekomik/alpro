@@ -20,7 +20,7 @@ int main() {
        
        //Input nilai-nilai dalam kasus
        cout<<"Tugas Alpro Granit";
-       cout<<"\n panjang ruang tamu:";
+       cout<<"\npanjang ruang tamu:";
        cin>>pRT;
        cout<<"lebar ruang tamu:";
        cin>>lRT;
