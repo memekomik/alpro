@@ -1,6 +1,6 @@
 #include <iostream>
 
-using namespace std
+using namespace std;
 
 int main() {
        const float Lgranit = 0.6 * 0.6;
@@ -21,12 +21,12 @@ int main() {
        //Input nilai-nilai dalam kasus
        cout<<"Tugas Alpro Granit";
        cout<<"\n panjang ruang tamu:";
-       cin>>pRT
+       cin>>pRT;
        cout<<"lebar ruang tamu:";
        cin>>lRT;
        cout<<"panjang ruang keluarga:";
        cin>>pRK;
-       cout>>"lebar ruang keluarga:";
+       cout<<"lebar ruang keluarga:";
        cin>>lRK;
        
        //Proses
