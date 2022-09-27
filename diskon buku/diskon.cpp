@@ -6,17 +6,17 @@ int b1,b2,b3,tBelanja,diskon,kembalian,uang;
 
 int main(){
 	cout<<"Program menghitung diskon buku\n";
-	cout<<"masukkan harga buku 1:";
+	cout<<"masukkan harga buku 1: ";
 	cin>>b1;
-	cout<<"masukkan harga buku 2:";
+	cout<<"masukkan harga buku 2: ";
 	cin>>b2;
-	cout<<"masukkan harga buku 3:";
+	cout<<"masukkan harga buku 3: ";
 	cin>>b3;
 	
 	tBelanja = b1+b2+b3;
-	cout<<"total belanjaan buku anda adalah:"<<tBelanja<<endl;
+	cout<<"total belanjaan buku anda adalah: "<<tBelanja<<endl;
 	
-	if (tBelanja <=100000){
+	if (tBelanja <= 100000){
 		diskon = tBelanja;
 		cout<<"Anda tidak mendapat diskon \n";
 		cout<<"Total belanjaan adalah: " <<diskon<<endl;
