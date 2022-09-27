@@ -24,7 +24,7 @@ int main(){
         
 	else if (tBelanja > 100000 && tBelanja < 150000){
 		diskon = tBelanja*(1-0.07);
-		cout<<"Selamat!! Anda mendapatkan diskon sebesar 7 %\n";
+		cout<<"Selamat!! Anda mendapatkan diskon sebesar 7% \n";
 		cout<<"Total belanjaan setelah diskon adalah: " <<diskon<<endl;
 		}
 		
