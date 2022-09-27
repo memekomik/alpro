@@ -18,31 +18,40 @@ int main(){
 	
 	if (tBelanja <=100000){
 		diskon = tBelanja;
-		cout<<"Total belanjaan setelah diskon adalah: " <<diskon<<endl;
+		cout<<"Anda tidak mendapat diskon \n";
+		cout<<"Total belanjaan adalah: " <<diskon<<endl;
         }
         
-	else if (tBelanja > 100000){
+	else if (tBelanja > 100000 && tBelanja < 150000){
 		diskon = tBelanja*(1-0.07);
+		cout<<"Selamat!! Anda mendapatkan diskon sebesar 7 %\n";
 		cout<<"Total belanjaan setelah diskon adalah: " <<diskon<<endl;
 		}
 		
-	else if ((tBelanja >= 150000)&&(tBelanja <= 250000)){
+	else if (tBelanja >= 150000 && tBelanja <= 250000){
 		diskon = tBelanja*(1-0.1);
+		cout<<"Selamat!! Anda mendapatkan diskon sebesar 10% \n";
 		cout<<"Total belanjaan setelah diskon adalah: " <<diskon<<endl;
 		}
 		
 	 else {
 		diskon = tBelanja*(1-0.12);
+		cout<<"Selamat!! Anda mendapatkan diskon sebesar 12% \n";
 		cout<<"Total belanjaan setelah diskon adalah: " <<diskon<<endl;
 		}
 		
-	while(diskon>0){
+	do{
 	cout<<"Masukkan nominal uang: ";
 	cin>>uang;
 	kembalian = uang-diskon;
-	cout<<"Kembalian anda adalah: "<<kembalian<<endl;
-	break;
+	
+	if (kembalian<0){
+		cout<<"Uang anda kurang, silahkan bayar sesuai nominal atau lebih dari nominal untuk mendapat kembalian.\n";
+		}
 	}
+	while(kembalian<0);
+		
+		cout<<"Kembalian anda adalah: "<<kembalian<<endl;
 	
 	return 0;
 	
