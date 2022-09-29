@@ -7,7 +7,7 @@ char film;
 
 int main(){
 	
-	//harga tiket Film anak-anak
+	//harga tiket film anak-anak
 	int ha=40000;
 	//harga tiket film remaja
 	int hr=45000;
@@ -31,7 +31,8 @@ int main(){
 		
 		cout<<"Film yang dapat anda tonton adalah: \n";
 		cout<<"1. Frozen \n2. Minion"<<endl;
-		
+//untuk memvalidasi input, menggunakan for loop agar setiap user yang memasukkan input tidak sesuai, akan terjadi pengulangan input
+//sampai didapatkan input yang sesuai
 		for (;;)
 		{
 		cout<<"Pilihan film anda (masukan nomor film): ";
@@ -138,7 +139,8 @@ int main(){
 		break;
 		}
 	}
-	
+//menggunakan while do untuk mengecek apakah uang user sesuai atau melebihi total biaya tiket, jika sesuai ditampikan kembalian
+//jika kembalian minus, maka user akan diminta untuk menginput hingga sesuai atau melebihi total biaya tiket
 	do{
 	cout<<"Masukkan nominal uang: ";
 	cin>>uang;
@@ -151,6 +153,7 @@ int main(){
 	while(kembalian<0);
 		
 		cout<<"Kembalian anda adalah: "<<kembalian<<endl;
+		cout<<"Terimakasih telah memesan tiket di Bioskop XXII. Selamat menonton!";
 	
 	return 0;
 }
