@@ -16,11 +16,11 @@ int main(){
 	
 	cout<< "--------------PROGRAM HARGA TIKET BIOSKOP XXII--------------"<<endl;
 	cout<< "\nDaftar Film Tayang Hari Ini \n";
-	cout<<"1. Frozen"<<endl;
-	cout<<"2. Minion"<<endl;
-	cout<<"3. Dilan"<<endl;
-	cout<<"4. Mencuri Raden Saleh"<<endl;
-	cout<<"5. John Wick"<<endl;
+	cout<<"1. Frozen"<<"		"<< "Rp. 40.000;" << endl;
+	cout<<"2. Minion"<<"		"<< "Rp. 40.000;" << endl;
+	cout<<"3. Dilan"<<"		"<< "Rp. 45.000;" << endl;
+	cout<<"4. Mencuri Raden Saleh"<<"		"<< "Rp. 40.000;" << endl;
+	cout<<"5. John Wick"<<"		"<< "Rp. 55.000;" << endl;
 	cout<<"--------------------------------------------------------------"<<endl;
 	
 	cout<<"\nMasukkan usia anda: ";
